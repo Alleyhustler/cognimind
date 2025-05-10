@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+  
+<!-- Mirrored from pandurso.neocities.org/reading by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 10 May 2025 17:08:31 GMT -->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Look around Pan's bookshelves for interesting guides, fascinating handbooks and good tales.">
+    <!--    favicon    -->
+    <link rel="apple-touch-icon" sizes="180x180" href="Images/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="Images/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="Images/favicon/favicon-16x16.png">
+    <link rel="manifest" href="Images/favicon/site.webmanifest">
+    <link rel="mask-icon" href="Images/favicon/safari-pinned-tab.svg" color="#3c3043">
+    <meta name="msapplication-TileColor" content="#3c3043">
+    <meta name="theme-color" content="#3c3043">
+    <!--    favicon    -->
+    <link rel="canonical" href="index.html"/>
+    <title>Public Library</title>
+    <link href="style.css" rel="stylesheet" type="text/css" media="all">
+    <script src="java.js" defer></script>
+    <script src="../code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+  </head>
+  
+  <body id="Body" class="Body3">
+    <div id="loading">
+      <div></div>
+      <script>
+// ------------------------------ LOAD SCREEN!! ------------------------------ //
+        
+      document.onreadystatechange = function () {
+        if (document.readyState !== "complete") {
+          document.querySelector("body").style.visibility = "hidden";
+          document.getElementById("loading").style.visibility = "visible";
+        }
+        else {
+          setTimeout(() => {
+             document.getElementById("loading").style.display ="none";
+             document.querySelector("body").style.visibility = "visible";
+          }, 3000)
+        }
+      };
+      
+// ------------------------------ LOAD SCREEN!! ------------------------------ //
+      </script>
+    </div>
+
+    <script data-goatcounter="https://pandurso.goatcounter.com/count" async src="../gc.zgo.at/count.js"></script>
+    <noscript> <img src="https://pandurso.goatcounter.com/count?p=/reading"> </noscript>
+
+    <!-- sliders going on down here -->
+    <div class="slider-container" id="slider-container"></div>
+    <!-- sliders going on up from here -->
+    <main id="Main">
+      <div class="readingBox">
+        <h1>The Library!</h1>
+        <p style="text-align: center; color: var(--Light-Mustard); font-size: 0.8em">This page may be not accessible for some users, it uses PDF files and Iframe embeds, which can be hard or innaccessible for screenreaders or keyboard navigating.</p>
+        <p>For every book you buy and every paper you pay to read, only a portion of the money goes to the actual author, artist, and/or researcher, sometimes even less than half of what you paid for it! (Even if not calculating the price of printing and other materials.)</p>
+        <p>If you want to really support your favorite authors and science branches, consider instead supporting them <mark><b>directly</b></mark>, some might have their own websites and mail public online.</p>
+        <p><b>Some authors might even deliver their book/paper directly to you if you talk to them!</b></p>
+        <p style="font-size: 0.9vem"><em><b>Disclaimer:</b> I'm not responsible for any messages contained in these books and I do not, necessarily, endorse them. Some are there because I like them, some are literally just dictionaries, and some I do not agree with but are there for case study and learning!</em></p>
+        <p>If you want to give a suggestion on a new addition or on how to make this page better (or if a link stopped working), you can contact me <a href="contact.html">here</a>!</p>
+        <script>
+          var Link1;
+          function setBook(a) {
+            Link1 = a;
+            document.getElementById("reader").style = `height: 80vh; width:95%; background-color: var(--dark-purple); border: 0.5em inset var(--lavender);`
+            document.getElementById("reader").src = `https://drive.google.com/file/d/${Link1}/preview`
+            document.getElementById("download").href= `https://drive.usercontent.google.com/download?id=${Link1}&export=download`
+          }
+        </script>
+        <div class="book-choosing">
+          <select aria-label="General Books" class ="choose1" name="Book" onchange="setBook(this.value)">
+            <option value="">book</option>
+            <option value="1AQouhq7QZC148H6cCw86P0upz7rv0jMi" title="George Orwell">1984</option>
+            <option value="1zXIshJ6Fvhi-YFRs5v6x9gocn2-P19XJ" title="Peter Gelderloos">Anarchy Works</option>
+            <option value="1AQrgduEKEy6qIl7X-TCADDXnGz6mToJf" title="George Orwell">Animal Farm</option>
+            <option value="1vxjAD5GSPYVRobSbc0AAt4EbmAxScuCw" title="Frans De Waal">Are We Smart Enough to Know How Smart Animals Are</option>
+            <option value="1hWGU6A--qETMbf2XnSIctknZISH93L7X" title="The Oriental Institute of the University Of Chicago">Book of The Dead</option>
+            <option value="1GghPnXMq1cgBAXcb51rEKKA9akfvunlh" title="Neil Gaiman">Coraline</option>
+            <option value="1P6OSTT8St1-TX3zLmZOUs-U36XjeWG4q" title="Achille Mbembe">Critique of Black Reason</option>
+            <option value="1_SbDK4MBt8N8c1-YZNmWiL_KQ5S8E4fW" title="Niccolò Machiavelli">Discourses on Livy</option>
+            <option value="14T5ZX0W6yxPTF07iOWhwGvEauPvP7M7a" title="Steven Pinker">Enlightment Now</option>
+            <option value="1a8eZRS0n6NhcaRiH4O1jeVdb6RoSFUx9" title="Joan Roughgarden">Evolution's Rainbow</option>
+            <option value="1U9zh-k6FYktPG7iDJFv9k_A-vSgVuyu3" title="Jack Cohen & Ian Stewart">Figments of Reality</option>
+            <option value="10om3XZO-WXKtMraibPSuwMx6QEJQfgou" title="Ian Stewart">Mathematics of Life</option>
+            <option value="11k40mtBJdVTApZTPrncokY_5OvMVRa-E" title="William Godwin">Of Population</option>
+            <option value="1h5JAwIkT-t5CWS9vsPPuiJkDd5ugsSg3" title="Muhsin Mahdi">One Thousand and One Nights</option>
+            <option value="1plo0hgsBf38EozyfnpZTb_deiy5fqo8C" title="Agustín Fuentes">Race, Monogamy, And Other Lies They Told You</option>
+            <option value="1t1IHgjt8O5-XKHO1XSwTy-e3cKb11mUG" title="Ursula K. Le Guin">The Dispossessed</option>
+            <option value="1HdMFcUfiWa2YxvN_BRhZbULzGp8H8jlf" title="James George Frazer">The Golden Bough</option>
+            <option value="1VGgiEd_W67AFzLhBRPeSKxNwCcEV6vlt" title="Ursula K. Le Guin">The Left Hand of Darkness</option>
+            <option value="1eq9s7qUgakT2KHWWAj_eb8dJm5PPLuoI" title="Niccolò Machiavelli">The Prince</option>
+            <option value="14_yWWE0-F99Xob_2gDHuJXUD0p4-c6mq" title="Angela Willey">Undoing Monogamy</option>
+            <option value="1ep9POA3uUveZkyzVcRoXz0wu7EwoO2w9" title="Jack Cohen & Ian Stewart">What Does a Martian Look Like?</option>
+          </select>
+          <select aria-label="Guides" class ="choose1" name="Guide" onchange="setBook(this.value)">
+            <option value="">guide</option>
+            <option value="13jj1wS4kQXXlkrUzH9wnyZrrws7d29pn" title="Marian Green">A Witch Alone</option>
+            <option value="1_LD-dtDxMUvWOIUdTjEGS_qdKdZ4YTbc" title="Uldis Zarins & Sandis Kondrats">Anatomy for Sculptors</option>
+            <option value="15YrTwrpqs0lKaqCmGGzvstivB_BtKpK5" title="Eliot Goldfinger">Animal Anatomy for Artists</option>
+            <option value="1gmrQCVwUhVWpGnjjoJuIuxmPi0X8vEqW" title="Andrew Boyd & Dave Oswald Mitchell">Bela Baderna (pt-br)</option>
+            <option value="1Boi_rp084UkuVCw9lEYPB-7TgxkbFUIh" title="Nikos A. Salingaros">Biophilia & Healing Environments</option>
+            <option value="104NpGF0uhgl-MZ3jJFFmiUHOvNL1TAeo" title="Serita Stevens & Anne Bannon">Book of Poisons - for Writers</option>
+            <option value="1tK2zTWSZYAxXsTv8JEP2Cq2HVKUxZebC" title="Alberto Toscano & Jeff Kinkle">Cartographies of the Absolute</option>
+            <option value="1djN9v4ebznWN9YJ4y4JnttioNHkYQZCx" title="Clifford C. Houk & Richard Post">Chemistry - Concepts and Problems</option>
+            <option value="1ismnsH8Jp0QDzhDDPjxrh0FWitnBxHhL" title="Gary R. Varner">Creatures in the Mist</option>
+            <option value="1KWxcJDJCCSILSE2kA4pXgJWA3Bte4Rsr" title="William O'Connor">Dracopedia The Bestiary</option>
+            <option value="1zRZe6JQVS0whxy0GayzPYMW5CMGCYgS2" title="Leonardo Caldas Vieira">Egyptian Demotic Guide</option>
+            <option value="1edfPBwZRgfoTHQryjB6SA36iYVVv5430" title="James Patterson">Hacking - Beginner to Expert Guide</option>
+            <option value="1CnGwfFiaypO_Sk2O7fBZeVsvLmqcg7di" title="Richard M. Lerner">Handbook of Child Psychology</option>
+            <option value="1oJzYD-QN3w67eJfeHkfiQ7ykQBBKLCwO" title="Karen Harrison">Herbal Alchemist's Handbook</option>
+            <option value="1reWziK9Ar9oEUZe6ckzQDMznSjK6UVdT" title="Brian Haughton">Hidden History</option>
+            <option value="1CLBlPS1IEds1U8zrMJJ9cWMM_5QpRoCJ" title="Michael Armstrong">Human Resources - Handbook of Reward Management</option>
+            <option value="1ZaAts1SXzlFSiJnuTMJN3jJw7jJWHPKr" title="Robert Winston">Human - The Definitive Visual Guide</option>
+            <option value="1cdQFN6kGm3oIjE6l6AIC8pBjk6PhrYL4" title="Thomas Karlsson">Quabala Qliphoth and Goetic Magic</option>
+            <option value="1m56vxLQjuGfn31yWeTBw8pBh26CORsG2" title="Luke Park">Korean Language Guide</option>
+            <option value="1_PP2Z3n0tqGV7rEaYcmVpaag-bn2a-wF" title="Michel Lauricella">Morpho - Fat and skin folds</option>
+            <option value="1Crn65D9aXRH4ey2GdWaphIi6BfsAkXCm" title="Dr. Robert J. Girod">Police Liability and Risk Management</option>
+            <option value="1PjqntbP7lPs6zWoOr0InHGrI__oSNpNx" title="Lee Lofland">Police Procedure and Investigation - for Writers</option>
+            <option value="1C6lDiATOqnH7ZTA5-FFkvLrfTe5GilMk" title="Anne Wingate">Scene of the Crime - for Writers</option>
+            <option value="1SaVYeBzraMblfu5AoB1JFZFt8tTo3QoU" title="Adam Hart-Davis">Science - the Definitive Visual Guide</option>
+            <option value="18AeQ6dT0XFyFt8Eb43AF2nt20AVmFplI" title="Aryeh Kaplan">Sefer Yetzirah - In Theory and Practice</option>
+            <option value="1lyTZ8isMbEpcq28q1WrlojHcVu5A_Y_b" title="Dennis William Hauck">Complete Idiot's guide to Alchemy</option>
+            <option value="17-6i8AVwUrppnARSWP8OXkDGwB6EegqC" title="Christopher De Pree & Alan Axelrod">Complete Idiot's guide to Astronomy</option>
+            <option value="16Llhira83kwmitX3sUhVYV_TXe9yRYyt" title="Kevin Osborn & Dana L. Burgess">Complete Idiot's guide to Classical Mythology</option>
+            <option value="1EDTk0Z3L-1iabh936fyTUa-YQeb5SBZr" title="Lauren Jarrett & Lisa Lenard">Complete Idiot's guide to Drawing</option>
+            <option value="1rHasM1ax7yQ2dvn4ouF5eRYr1jU3p8bw" title="Steve Miller">Complete Idiot's guide to Science</option>
+            <option value="1gD1hyTNGL-NUc-rxuXuuNjEoGsh_cfo6" title="Brandon Toropov & Father Luke Buckles">Complete Idiot's guide to World Religions</option>
+            <option value="1CGFiStCj1Y6NP54m28CXQiwtDiDGxkpd" title="Paul Bergman & Sara J. Berman">The Criminal Law Handbook</option>
+            <option value="128viGIbDGofgZRylys1HgAQXzckNAzjI" title="Jonah Fishel & Tristan Fishel">Proactive Roleplaying</option>
+            <option value="1Ttw0ZoFVimugjvPiBIlF0JZcFaY4stTh" title="Emily Fiegenschuh">Explorer's Guide to Drawing Fantasy Creatures</option>
+            <option value="11xfjZZYNDUX9Bca4LvCE6bfIRccG0CNL" title="Andy Schmidt">Insider's Guide to Comics and Graphic Novels</option>
+            <option value="1IcGAkGgsUKnlE2aODcfxLGMY33SYs_J2" title="Janna Silverstein and several others">The Kobold Guide to Worldbuilding</option>
+            <option value="1CH6vdsUbqdMUVVIiZm03cZnn99fQDmy2" title="Skye Alexander">The Modern Guide to Witchcraft</option>
+            <option value="1DP1NQUN0FeXjhUyeB1F36TokcZ-_tu6D" title="Bluefluke">The Psychonaut Field Manual</option>
+            <option value="1JHVXegaJZZKRgw3TkdkhPF1_InG9JFF0" title="DK Publishing">The Definite Visual Guide to the Cosmos</option>
+            <option value="1L0YwANo1Y4Ui1jHLCr8xsAuDeRq8spLz" title="Monte Burch">The Ultimate Guide to Home Butchering</option>
+            <option value="1ccseAJEl7xiw4XiR8NtR4tXat0OdfbIf" title="Jay McCullough.">The Ultimate Guide to U.S. Army Survival</option>
+            <option value="1N1xez8tqcjxcp958sSUJovp7GitNgg_j" title="Angela Ackerman & Becca Puglisi">The Urban Setting Thesaurus</option>
+            <option value="14hLincMZXMLZMrAjx93jZdEV5RQ54M2v" title="M.G. Bullen">Thief in Law</option>
+            <option value="1AZyDAcmk6mh7zdUcvZdjqXKLVsf8Hqdv" title="Scott Kellogg & Stacy Pettigrew">Toolbox for Sustainable City Living</option>
+            <option value="1AZ7VzFRgfT4DnNSfd9uw2OvhuMBmKms9" title="Chris McLaughlin">Vertical Vegetable Farming</option>
+            <option value="162GhQP7HAV1rPxhNlD82aL-QL-KuPh0Z" title="Cory O’Brien">Zeus Grants Stupid Wishes</option>
+          </select>
+          <select aria-label="Encyclopedias" class ="choose1" name="Encyclopedia" onchange="setBook(this.value)">
+            <option value="">encyclopedia</option>
+            <option value="1YlhTY8oaDIgYJ08P1HpVC4bAw2OPUuUS" title="Dougal Dixon">After Man - A Zoology of the future</option>
+            <option value="1L2KkwW8LaL-kGi0CdYcQZNhoxVdZ4k-b" title="T. H. White">The Bestiary - A Book Of Beasts</option>
+            <option value="1KuUrGHwfWmbt61MdZYBXvETTXliLv5DC" title="Michael Largo">The Big, Bad Book of Beasts</option>
+            <option value="1Kpud5J5glAMFSBC2k3pAHWYJVv81QZrN" title="Michael Largo">The Big, Bad Book of Botany</option>
+            <option value="1KEn3kL4dl67nBDf8WpL0eE7Cm8JZvxpa" title="Caspar Henderson">The Book of Barely Imagined Beings</option>
+            <option value="1S_g0FH49IJRaWrPlQGnBw2BHNBf6VcNF" title="Borges Jorge Luis">Book of Imaginary Beings</option>
+            <option value="1KQKCKSpXV7nHtTaMGb8rzrYHhFAF9Keh" title="Philip E. Lilienthal">A Chinese Bestiary</option>
+            <option value="1Ql43QMtPv6N_sbaHjj84DmVCMuu_JUTV" title="Richard H. Wilkinson">The Complete Gods and Goddesses of Ancient Egypt</option>
+            <option value="1xkggb3c7fDBd-jJLpxT49vyJ52-uJdu8" title="John Conway, C.M. Kosemen & Darren Naish">Cryptozoologicon</option>
+            <option value="1UEFBPg-RZOmOmueYUOx_sJx7T247XJiF" title="Claude Lecouteux">Dictionary of Ancient Magic Words and Spells</option>
+            <option value="1w8CWQCgid3jNFVCtmNR4fLObMdlne-A6" title="Gustav Davidson">A Dictionary of Angels</option>
+            <option value="1yEWMBUT2l0a7_CCGBxgdt-us8Q6NJyMz" title="Donald J. Borror">Dictionary of Word Roots & Combining Forms</option>
+            <option value="1z7QUS0y_ohVQMq-iURbNHkWoKXP_W15H" title="Collin De Plancy">Dictionnaire Inferal</option>
+            <option value="14Q7YBBfIh-pu63Ay016ZHdb5OLsU95iR" title="Michelle Belanger">The Dictionary of Demons - Names of the Damned</option>
+            <option value="1QoxE2TGfLbXg3Mx8EBBmWRHrlffc6U7M" title="Andy Collins, Skip Williams &amp; James Wyatt">Draconomicon - D&amp;D</option>
+            <option value="1yj61JLz8mzOYQNwcxkVcVE_mew2GYXZT" title="John Matthews & Caitlín Matthews">The Element Encyclopedia of Magical Creatures</option>
+            <option value="175mcmf4CCrkZ46okiLbsT9xPYZ2mhrRn" title="John Michael Greer">The Element Encyclopedia of Secret Societies and Hidden History</option>
+            <option value="1EP1EuZLwpb7FrSZluX_S3iXoRjXgCGA4" title="Lewis Spence">An Encyclopaedia of Occultism</option>
+            <option value="1Dc2BHnuuLy7uAiT8ae9fMIyyCymZFD6A" title="Peter J. B. Slater">The Encyclopedia of Animal Behavior</option>
+            <option value="1WlW0dQyZCK63KbWYXI1bofz7cKYqcGN0" title="Patricia Monaghan">Encyclopedia of Celtic Mythology</option>
+            <option value="1g6IjFcKv8m0uhZgQUCSNZmc9XrP0h0tI" title="Rosemary Ellen Guiley">The Encyclopedia Of Demons And Demonology</option>
+            <option value="1gDtxw4NEelkH3GKCueXXCiGkj-x0w_lS" title="Theresa Bane">Encyclopedia of Demons in World Religions and Cultures</option>
+            <option value="1h4WvT0ICUtTYYltOpaOU6Rkltbc856ih" title="Julie McDowell">Encyclopedia of Human Body Systems</option>
+            <option value="1d-A0xPHC8C-_OKztw1cAO9jGLiIWg981" title="Claude Lecouteux">Encyclopedia of Norse and Germanic Folklore</option>
+            <option value="1sHpM8e0CZFIcYwCFMkWmd33Zv0G4MxNt" title="J. Gordon Melton">Encyclopedia of Occultism and Parapsychology Vol.1</option>
+            <option value="1Ci-Z8QMWGClNZ3VOde5PxV3ZyHVSIdsn" title="J. Gordon Melton">Encyclopedia of Occultism and Parapsychology Vol.2</option>
+            <option value="1gGqIJj4iE8Sj1DHRKRncenUw1V8FyOkn" title="Judika Illes">Encyclopedia of Spirits</option>
+            <option value="19MN-qBeke1l6O7vFIhDzmAiMWyNiqM5w" title="Dr. Bob Curran">Encyclopedia of the Undead</option>
+            <option value="19qD7KkaNz3lLe-NZENxbjx-Yrk4ZJjKZ" title="Theresa Bane">Encyclopedia of Vampire Mythology</option>
+            <option value="10neQqd7yiaRC9aXnWASSHu_8r9VT1MT5" title="Rosemary Guiley">The Encyclopedia Of Vampires, Werewolves, And Other Monsters</option>
+            <option value="1-wQVr70XOJ8aI71a2g_kcgt51guIA-tq" title="Charlie T. McCormick & Kim Kennedy White,">Folklore - An Encyclopedia</option>
+            <option value="1yRlj7GbIko8eDCyu2U26EhW3WcJKzsaM" title="George M. Eberhart">A Guide to Cryptozoology</option>
+            <option value="1H5ZOAT3UNzaRG9xCMcib5FUHSx5Wj8qu" title="Nigel Pennick">Magic Alphabets</option>
+            <option value="1yRETqQbH3-SDU48QodpVT9As9zWiqU6c" title="Mary Allyson Armistead">The Middle English Physiologus</option>
+            <option value="1aKTve4SM0V5tpagTLubdk_SO5RV5R8qC" title="Mike Mearls, Stephen Schubert &amp; James Wyatt">Monster Manual - D&amp;D</option>
+            <option value="1wqkMSX2A2W4mLiLeBcoDPuavWXFsKDif" title="Dougal Dixon">The New Dinosaurs - An Alternative Evolution</option>
+            <option value="10Ms4LFasvrM26RnjW-FZ6wYFdq2qOhwG" title="Nineveh Shadrach">Occult Encyclopedia of Magic Squares and Planetary Angels</option>
+            <option value="1yOQRFlu65p_OpdJ7gvgtulnj9E1a_FbT" title="Alan Wood Rendell">Theobaldus Physiologus</option>
+            <option value="1BdEhBP-0ra027C9tDT4IgaMusclp31Sj" title="Sherrilyn Kenyon">The Writer’s Digest Character Naming Sourcebook</option>
+            <option value="1-HahuBBjYbHL8i5qVIn5h158UOpJJb83" title='Oberon Zell-Ravenheart & Ash "LeopardDancer" Dekirk'>A Wizard's Bestiary</option>
+          </select>
+        </div>
+        <p></p>
+        <iframe aria-label="PDF Display embed" id="reader" src='#' style='height: 5vh; width:95%; background-color: var(--dark-purple); border: 0.5em inset var(--lavender);'></iframe>
+        <button style="padding: 0.4em 0.8em;margin: auto;display: block;font-size: inherit;"><a id="download" href='#' style="color: var(--black-brown);font-weight: bold;" download>Download PDF</a></button>
+        <div class="counters">
+          <p>You are visitor # <span class="counter" id="hitcount"></span></p><p>Last Updated: <span class="counter" id="lastupdate"></span></p>
+
+        </div>
+      </div>
+      <div class="goBack">
+        <a class="soundly" href="index.html">Take me back</a>
+      </div>
+      <div class="neocities"></div>
+    </main>
+    <footer id="footer"></footer>
+  </body>
+
+<!-- Mirrored from pandurso.neocities.org/reading by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 10 May 2025 17:08:32 GMT -->
+</html>
